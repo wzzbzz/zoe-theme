@@ -1,0 +1,175 @@
+/*
+Theme Name: Bridge Child
+Theme URI: http://demo.qodeinteractive.com/bridge/
+Description: A child theme of Bridge Theme
+Author: Qode Interactive
+Author URI: http://www.qodethemes.com/
+Version: 1.0.0
+Template: bridge
+*/
+@import url("../bridge/style.css");
+
+select:-moz-focusring {
+    color: transparent;
+    text-shadow: 0 0 0 #000;
+}
+
+a:focus {
+    outline:0;
+}
+
+ul {
+	list-style-position: outside;
+	padding-left: 18px;
+}
+.menu-item--icon-only {
+	display: none;
+}
+@media (min-width: 1001px) {
+	.menu-item--icon-only {
+		display: block;
+	}
+	.menu-item--icon-only i {
+		font-size: 1.5rem;
+		vertical-align: middle;
+		margin-right: 0 !important;
+		padding: 0;
+	}
+	.menu-item--icon-only span {
+		position:absolute;
+		left:-10000px;
+		top:auto;
+		width:1px;
+		height:1px;
+		overflow:hidden;
+	}
+}
+
+@media (max-width: 600px){
+	.subtitle {
+		position:absolute;
+		left:-10000px;
+		top:auto;
+		width:1px;
+		height:1px;
+		overflow:hidden;
+	}
+}
+
+body .gform_wrapper input[type=submit]:hover, body .gform_wrapper input[type=button]:hover, body .gform_wrapper input[type=reset]:hover {
+	background: #1c5e78;
+	border-color: #1c5e78;
+}
+
+/* body .gform_wrapper input[type=email]:focus, 
+body .gform_wrapper input[type=number]:focus, 
+body .gform_wrapper input[type=password]:focus, 
+body .gform_wrapper input[type=tel]:focus, 
+body .gform_wrapper input[type=text]:focus, 
+body .gform_wrapper input[type=url]:focus, 
+body .gform_wrapper select:focus, 
+body .gform_wrapper textarea:focus, 
+body .gform_wrapper.gf_browser_chrome .ginput_complex .ginput_right select:focus, 
+body .gform_wrapper.gf_browser_chrome .ginput_complex select:focus,
+a:focus,
+a:focus img,
+nav.mobile_menu ul li a:focus {
+	color: #1B5E61;
+	outline: 1px dotted #212121;
+	outline: 5px auto -webkit-focus-ring-color;
+	box-shadow: 0 0 0 1px rgb(56, 157, 197);
+	border: 1px dotted rgb(56, 157, 197);
+}
+.q_logo a {
+	box-shadow: none;
+	border: none;
+} */
+
+body.user-is-tabbing *:focus {
+	outline: 2px solid #1c5e78 !important; /* for non-webkit browsers */
+	outline: 5px auto -webkit-focus-ring-color !important;
+}
+
+.footer_top ul {
+	padding-left: 0;
+}
+
+.footer_top p,
+.footer_top a,
+.footer_bottom p {
+	color: #8f8f8f;
+}
+
+.q_logo img.sticky,
+.q_logo img.mobile,
+header.dark .q_logo img.normal {
+	display: none;
+}
+header.sticky:not(.header_style_on_scroll) .q_logo img.sticky {
+    display: block;
+}
+
+.icon_title {
+	font-weight: 600;
+    letter-spacing: 1px;
+	text-transform: uppercase;
+	font-size: 15px;
+    line-height: 1.571428571428571em;
+}
+
+.blog-header {
+	margin-bottom: 20px;
+	text-align: center;
+}
+
+.blog_holder.masonry article .entry_title {
+	margin-bottom: 10px;
+}
+.blog_holder.masonry article p {
+	line-height: 1.8;
+	margin-bottom: 10px;
+}
+.blog_holder.masonry article .post_info {
+	margin-top: 0;
+}
+
+@media (min-width: 1001px){
+	.company-news .blog_holder.masonry .blog_holder_grid_sizer, .company-news .blog_holder.masonry article {
+		width: 22.6%;
+	}
+}
+
+.blog_single.blog_holder {
+	padding-top: 50px;
+}
+
+.blog_single .entry_title {
+	margin-bottom: 10px;
+}
+
+.post_content_holder .entry_date,
+.blog_holder.masonry .time,
+.company-news .blog_holder .time {
+	position: absolute;
+	top: 0;
+	left: 0;
+	text-align: center;
+	margin: 5px;
+	padding: 5px 13px;
+	background-color: #fff;
+	z-index: 1;
+}
+
+.time_day {
+	color: #303030;
+	font-size: 19px;
+	font-weight: 600;
+}
+
+.time span {
+	display: block;
+}
+
+.icon_social_holder a {
+	text-decoration: none;
+}
